@@ -1,6 +1,50 @@
 *{
     box-sizing: border-box;
 }
+.about{
+    &-s1{
+        @include set-bg($about-s1__bg-img);
+    }
+    &-s2{
+        @include set-bg($about-s2__bg-img);
+    }
+    &-s3{
+        @include set-bg($about-s3__bg-img);
+    }
+}
+.bg{
+    &-black{
+        background-color: $color-black;
+    }
+}
+.contact{
+    &-s1{
+        @include set-bg($contact-s1__bg-img);
+    }
+    &-s2{
+        @include set-bg($contact-s2__bg-img);
+    }
+}
+.font{
+    &-logo{
+        font-family: $font-logo !important;
+        text-shadow: $text-shadow;
+    }
+}
+.index{
+    &-s1{
+        @include set-bg($index-s1__bg-img);
+    }
+    &-s2{
+        @include set-bg($index-s2__bg-img);
+    }
+    &-s3{
+        @include set-bg($index-s3__bg-img);
+    }
+    &-s4{
+        @include set-bg($index-s4__bg-img);
+    }
+}
 .minh{
     &-25vh{
         min-height:25vh;
@@ -18,5 +62,46 @@
 .opacity{
     &-8{
         opacity:0.8;
+    }
+}
+.workshops{
+    &-s1{
+        @include set-bg($workshops-s1__bg-img);
+    }
+    &-s2{
+        @include set-bg($workshops-s2__bg-img);
+    }
+    &-s3{
+        @include set-bg($workshops-s3__bg-img);
+    }
+    &-s4{
+        @include set-bg($index-s4__bg-img);
+    }
+}
+
+@media all and (min-width: 768px){
+    .contact{
+        &-s2{
+            @include set-bg($contact-s2__bg-img--md);
+        }
+    }
+    .index{
+        &-s3{
+            @include set-bg($index-s3__bg-img--md);
+        }
+    }
+    .minh-md{
+        &-25vh{
+            min-height:25vh;
+        }
+        &-50vh{
+            min-height: 50vh;
+        }
+        &-75vh{
+            min-height: 75vh;
+        }
+        &-100vh{
+            min-height: 100vh;
+        }
     }
 }
